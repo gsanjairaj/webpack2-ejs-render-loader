@@ -1,0 +1,34 @@
+{
+    "name": "webpack2-ejs-render-loader",
+    "version": "1.0.0",
+    "description": "EJS webpack 2 render loader (without frontend dependencies)",
+    "main": "index.js",
+    "scripts": {
+        "test": "cd test && webpack && node bundle.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gsanjairaj/webpack2-ejs-render-loader.git"
+    },
+    "keywords": [
+        "ejs",
+        "webpack",
+        "loader",
+        "template"
+    ],
+    "author": "Sanjai Raj Gunasekaran",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/gsanjairaj/webpack2-ejs-render-loader/issues"
+    },
+    "homepage": "https://github.com/gsanjairaj/webpack2-ejs-render-loader",
+    "dependencies": {
+        "ejs": "^2.0.0",
+        "loader-utils": "^0.2.7",
+        "raw-loader": "0.5.1",
+        "webpack": "2.4.1"
+    },
+    "devDependencies": {
+        "node-libs-browser": "0.5.3"
+    }
+}
