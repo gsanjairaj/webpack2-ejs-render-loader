@@ -29,17 +29,6 @@ This is the initial and very simple version. Much more changes are needed and an
     }
 ```
 
-## Options
-
-Pass the object containing the data/values for the template using the options object:
-```javascript
-module: {
-  loaders: [
-    {test: /\.ejs$/, loader: 'webpack2-ejs-render-loader'} // enable here
-  ]
-}
-```
-
 ## License
 
 MIT (http://www.opensource.org/licenses/mit-license.php)
