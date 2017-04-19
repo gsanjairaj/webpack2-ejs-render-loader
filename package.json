@@ -3,9 +3,6 @@
     "version": "1.0.0",
     "description": "EJS webpack 2 render loader (without frontend dependencies)",
     "main": "index.js",
-    "scripts": {
-        "test": "cd test && webpack && node bundle.js"
-    },
     "repository": {
         "type": "git",
         "url": "https://github.com/gsanjairaj/webpack2-ejs-render-loader.git"
