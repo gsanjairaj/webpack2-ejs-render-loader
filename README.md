@@ -28,6 +28,8 @@ This is the initial and very simple version. Much more changes are needed and an
         }]
     }
 ```
+test.ejs
+
 ```html
 
 <div>
@@ -39,11 +41,11 @@ Webpack Output bundle:
 
 ```javascript
 
-module.exports = "<div>\n  <a href=\"/my/url\">Name</a>\n</div>\n"
+module.exports = "<div>\n  <a href=\"/my/about\">Name</a>\n</div>\n"
 
 
 ```
-Look at the [example](https://github.com/gsanjairaj/webpack2-ejs-render-loader) provided in the folder - example. Navigate to the example folder and run "npm run build", the webpack bundle will be
+Look at the [example](https://github.com/gsanjairaj/webpack2-ejs-render-loader/tree/master/example) provided in the folder - example. Navigate to the example folder and run "npm run build", the webpack bundle will be
 created in example/dist/main.bundle.js.
 
 ## License
