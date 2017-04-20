@@ -1,0 +1,28 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "keywords": [
+    "ejs",
+    "webpack",
+    "loader",
+    "template"
+  ],
+  "author": "Sanjai Raj Gunasekaran",
+  "license": "MIT",
+  "scripts": {
+    "build:dev": "npm run clean:dist && webpack --config config/webpack.dev.js --progress --profile --verbose",
+    "build": "npm run build:dev",
+    "clean:dist": "npm run rimraf -- dist",
+    "rimraf": "rimraf"
+  },
+  "dependencies": {
+    "rimraf": "^2.6.1",
+    "webpack": "^2.4.1",
+    "webpack-merge": "^4.1.0",
+    "webpack2-ejs-render-loader": "^1.1.0"
+  },
+  "engines": {
+    "node": ">= 4.2.1",
+    "npm": ">= 3"
+  }
+}
