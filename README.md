@@ -19,7 +19,7 @@ This is the initial and very simple version. Much more changes are needed and an
             test: /\.ejs$/,
             use: [{
                     loader: 'webpack2-ejs-render-loader',
-                    options: { data: { Name: 'test', Age: '20' } }
+                    options: { data: { href: '/my/about', Age: '20' } }
                 },
                 {
                     loader: 'raw-loader'
@@ -28,6 +28,23 @@ This is the initial and very simple version. Much more changes are needed and an
         }]
     }
 ```
+```html
+
+<div>
+  <a href="<%= data.href %>">Name</a>
+</div>
+
+```
+Webpack Output bundle:
+
+```javascript
+
+module.exports = "<div>\n  <a href=\"/my/url\">Name</a>\n</div>\n"
+
+
+```
+Look at the [example](https://github.com/gsanjairaj/webpack2-ejs-render-loader) provided in the folder - example. Navigate to the example folder and run "npm run build", the webpack bundle will be
+created in example/dist/main.bundle.js.
 
 ## License
 
